@@ -1,0 +1,148 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+    line-height: 1.65;
+}
+
+.container-1 {
+    width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.container-1 {
+    display: flex;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-1 {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-2 {
+    flex: 1;
+    order: 3;
+}
+
+
+.container-2 {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.layanan-1 {
+    background-color: #bbd0ff;
+}
+
+.layanan-2 {
+    background-color: #c9ffbb;
+}
+
+.layanan-3 {
+    background-color: #ffc2bb;
+}
+
+
+.container-3 {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.container-4 {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1; 
+    background-color: #f7f7f7;
+    overflow: hidden; 
+}
+
+.card .header {
+    height: 150px;
+    background-color: #ccc;
+}
+
+.card .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card.besar {
+    transform: scale(1.132); 
+    z-index: 10;
+}
+
+
+.container-5 {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid black;
+    display: flex;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: white;
+     margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+}
